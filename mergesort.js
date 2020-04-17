@@ -30,3 +30,12 @@ function merge(array1, array2) {
   }
   return output;
 }
+
+function mergeSort(array){
+  if (array.length===1) return array;
+  return merge( mergeSort(split(array)[0]),mergeSort(split(array)[1]));
+
+  
+  
+
+}
